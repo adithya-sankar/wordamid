@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        tools:context="in.adithyaraam.wordamid.MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView_main"
+    android:background="#3498db">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#2c3e50">
+        <android.support.v7.widget.CardView
+            android:id="@+id/random_card"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="10dp"
+            android:gravity="bottom"
+            card_view:cardElevation="5dp"
+            android:onClick="randomizeClick"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+            <ImageView
+                android:src="@drawable/randomize"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:contentDescription="Randomize" />
+            <TextView
+                android:id="@+id/random_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="RANDOMIZE"
+                android:background="#bdc3c7"
+                android:textColor="#2c3e50"
+                android:textSize="40sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textStyle="bold"
+                />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/alphabetical_card"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="10dp"
+            card_view:cardElevation="0dp"
+            android:onClick="alphabeticalClick"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:src="@drawable/alphabetical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:contentDescription="Alphabetical" />
+            <TextView
+                android:id="@+id/alphabetical_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="ALPHABETICAL"
+                android:background="#bdc3c7"
+                android:textColor="#2c3e50"
+                android:textSize="40sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textStyle="bold"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/new_card"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="10dp"
+            card_view:cardElevation="5dp"
+            android:onClick="unknownClick"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:src="@drawable/new_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Learning"
+                android:background="#ecf0f1" />
+
+            <TextView
+                android:id="@+id/new_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="LEARNING"
+                android:background="#bdc3c7"
+                android:textColor="#2c3e50"
+                android:textSize="40sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textStyle="bold"
+                />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/old_card"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="10dp"
+            card_view:cardElevation="5dp"
+            android:onClick="knownClick"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:src="@drawable/familiarised"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Familiarised"
+                android:background="#ecf0f1" />
+
+            <TextView
+                android:id="@+id/old_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="FAMILIARISED"
+                android:background="#bdc3c7"
+                android:textColor="#2c3e50"
+                android:textSize="40sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textStyle="bold"
+                />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/info_card"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="10dp"
+            card_view:cardElevation="5dp"
+            android:onClick="informationClick"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:src="@drawable/information"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:contentDescription="Information" />
+
+            <TextView
+                android:id="@+id/info_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="INFORMATION"
+                android:background="#bdc3c7"
+                android:textColor="#2c3e50"
+                android:textSize="40sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textStyle="bold"
+                />
+        </android.support.v7.widget.CardView>
+        </LinearLayout>
+</ScrollView>
